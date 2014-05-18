@@ -45,6 +45,3 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
   round(mean(fooGood),digits=3)
 }
 
-setwd("/users/Eric/My_Dev/coursera/rprog/rprog_airpollution")
-y <- pollutantmean("specdata","sulfate",1)
-y
