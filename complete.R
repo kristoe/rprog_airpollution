@@ -48,10 +48,13 @@ complete <- function(directory, id = 1:332) {
 
     }
     
-    if(fileNobs >=1)
+    if(fileNobs >= 1)
     {
       numGood <- numGood+1
       fooGood[numGood,] <- c(i,fileNobs)  
+    } else {
+      numGood <- numGood+1
+      fooGood[numGood,] <- c(i,0)
     }
       
 
@@ -59,6 +62,8 @@ complete <- function(directory, id = 1:332) {
   fooBad <- is.na(fooGood[,1])
   
   x <- subset(fooGood,!fooBad)
+  
+  #x <- fooGood[!fooBad]
   
   x  
 
