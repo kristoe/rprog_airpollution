@@ -65,6 +65,6 @@ complete <- function(directory, id = 1:332) {
   
   #x <- fooGood[!fooBad]
   
-  x  
+  x    
 
 }

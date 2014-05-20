@@ -45,7 +45,7 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
    good = x[!bad]
     
    fooGood <- c(good,fooGood)
-  }
+  }  
   round(mean(fooGood),digits=3)
 }
 
