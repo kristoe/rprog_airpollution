@@ -13,6 +13,7 @@ corr <- function(directory, threshold = 0) {
   
   ## Return a numeric vector of correlations
   
+  options(digits=6)
   #print(paste("dir",directory))
   #print(paste("threshold",threshold))
   
@@ -31,7 +32,7 @@ corr <- function(directory, threshold = 0) {
   
   fileNobs <- 0
   targetMonitors <- vector()
-  jc <- vector()
+  jc <- vector('numeric')
   goodMonitors <- 0
   
   #print(paste("id1=",id1,"id2=",id2))
@@ -100,5 +101,6 @@ corr <- function(directory, threshold = 0) {
       
     }  
   }
+  #options(digits=7)
   jc
 }
